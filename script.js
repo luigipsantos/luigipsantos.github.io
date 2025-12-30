@@ -3,12 +3,12 @@ const sections = {
 ABOUT ME
 --------
 
-Name: Your Name
+Name: Luís Filipe Pereira dos Santos
 Role: Developer
 Interests:
-- Web
+- Full-stack Java developer
 - Low-level systems
-- Retro tech
+- More!
   `,
 
   projects: `
@@ -26,8 +26,8 @@ PROJECTS
 CONTACT
 -------
 
-Email: you@email.com
-GitHub: github.com/yourname
+Email: luigipsantos@gmail.com
+GitHub: github.com/luigipsantos
   `
 };
 
