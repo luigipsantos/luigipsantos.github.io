@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Luís Santos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header">
-    <h1>Luís Santos</h1>
-    <p class="subtitle">Your Role · Your Field</p>
-  </header>
+  <div class="pc">
+    <!-- CRT screen -->
+    <div class="screen">
+      <pre id="content">
+WELCOME TO MY TERMINAL
 
-  <main class="container">
+> Press a menu option
+      </pre>
+    </div>
 
-    <section>
-      <h2>About</h2>
-      <p>
-        I am a brief, professional introduction. Focus on what you do,
-        what you're learning, or what kind of roles you're interested in.
-      </p>
-    </section>
+    <!-- Menu -->
+    <div class="menu">
+      <button onclick="showSection('about')">ABOUT ME</button>
+      <button onclick="showSection('projects')">PROJECTS</button>
+      <button onclick="showSection('contact')">CONTACT</button>
+    </div>
+  </div>
 
-    <section>
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-        <li>Problem Solving</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project Name</h3>
-        <p>Short description of what it does and what you used.</p>
-        <a href="#">View on GitHub →</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <ul class="links">
-        <li><a href="https://github.com/yourusername">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
-        <li><a href="mailto:you@email.com">Email</a></li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© 2025 Your Name</p>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
