@@ -9,7 +9,7 @@ body {
 
 .pc {
   position: relative;
-  width: 800px; /* scale as you like */
+  width: 800px;
 }
 
 .pc-image {
@@ -19,7 +19,6 @@ body {
 
 .crt-screen {
   position: absolute;
-  /*Adjust to screen size!*/
   top: 19%;
   left: 22.5%;
   width: 55%;
