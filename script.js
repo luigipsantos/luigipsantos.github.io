@@ -1,4 +1,10 @@
 const sections = {
+  main: `
+  WELCOME
+  
+  > SELECT OPTION
+  `,
+
   about: `
 ABOUT ME
 --------
@@ -34,3 +40,10 @@ GitHub: github.com/luigipsantos
 function showSection(section) {
   document.getElementById("content").textContent = sections[section];
 }
+
+function showMainMenu() {
+  document.getElementById("content").textContent = sections.main;
+}
+
+// Initialize with main menu
+showMainMenu();

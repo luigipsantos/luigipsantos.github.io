@@ -5,11 +5,14 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Courier New", monospace;
+  margin: 0;
+  overflow: hidden;
 }
 
 .pc {
   position: relative;
-  width: 800px;
+  width: 1200px;
+  margin-top: 7.5%;
 }
 
 .pc-image {
@@ -22,7 +25,7 @@ body {
   top: 19%;
   left: 22.5%;
   width: 55%;
-  height: 40%;
+  height: 45%;
 
   color: #00ff66;
   text-shadow: 0 0 6px #00ff66;
@@ -31,6 +34,8 @@ body {
   box-sizing: border-box;
 
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .crt-screen::after {
@@ -45,13 +50,35 @@ body {
     transparent 4px
   );
   pointer-events: none;
+  z-index: 1;
 }
 
-/* Menu */
+/* Content area */
+#content {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  white-space: pre-wrap;
+}
+
 .menu {
-  margin-top: 15px;
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-left {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-right {
+  display: flex;
 }
 
 .menu button {
@@ -61,4 +88,25 @@ body {
   padding: 8px 16px;
   font-family: inherit;
   cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.menu button:hover {
+  background: #00ff66;
+  color: black;
+  text-shadow: none;
+}
+
+.back-btn {
+  padding: 8px 12px !important;
+}
+
+.back-btn::before {
+  content: "←";
+  font-size: 16px;
 }
