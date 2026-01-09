@@ -11,22 +11,23 @@
     <img src="images/PCScreenCTR.png" class="pc-image" alt="PC Screen">
 
     <div class="crt-screen">
+      <!-- CRT scanlines overlay -->
+      <div class="scanlines"></div>
+      <!-- Screen flicker effect -->
+      <div class="flicker"></div>
+      
+      <div class="top-menu">
+        <button onclick="showSection('about')">ABOUT</button>
+        <button onclick="showSection('projects')">PROJECTS</button>
+        <button onclick="showSection('contact')">CONTACT</button>
+        <button onclick="showMainMenu()" class="back-btn" title="Back to Main Menu">BACK</button>
+      </div>
+      
       <pre id="content">
   WELCOME
   
   > SELECT OPTION
       </pre>
-      
-      <div class="menu">
-        <div class="menu-left">
-          <button onclick="showSection('about')">ABOUT</button>
-          <button onclick="showSection('projects')">PROJECTS</button>
-          <button onclick="showSection('contact')">CONTACT</button>
-        </div>
-        <div class="menu-right">
-          <button onclick="showMainMenu()" class="back-btn" title="Back to Main Menu"></button>
-        </div>
-      </div>
     </div>
   </div>
 
